@@ -7,5 +7,10 @@ export const productsMockRouter = Router()
 
 
 productsMockRouter.get('/', async (req,res) =>{
-    res.json(await productsDaoMock.readMany())
+    try {
+        res.json(await productsDaoMock.readMany())
+    } catch (error) {
+        next(error)
+    }
+    
 })
