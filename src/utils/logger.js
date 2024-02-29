@@ -1,9 +1,27 @@
 import winston from 'winston'
-import { loggerLevel } from '../config/config.js'
+import { LogLevel } from '../config/config.js'
 
-export const logger = winston.createLogger({
+
+
+// Logger para desarrollo
+export const developmentLogger = winston.createLogger({
     transports: [
-        new winston.transports.Console({ level: loggerLevel.CONSOLE }),
-        new winston.transports.File({ level: loggerLevel.FILE, filename: './logs/log.txt' })
+        new winston.transports.Console({ 
+            level: LogLevel.DEBUG 
+        }),
+        new winston.transports.File({ 
+            level: LogLevel.DEBUG, 
+            filename: './logs/log.txt' 
+        })
     ]
-})
+});
+
+// Logger para producción
+export const productionLogger = winston.createLogger({
+    transports: [
+        new winston.transports.File({ 
+            level: LogLevel.INFO,
+            filename: './logs/log.txt' 
+        })
+    ]
+});

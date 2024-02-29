@@ -1,20 +1,14 @@
+export const LogLevel = {
+    DEBUG: 'debug',
+    HTTP: 'http',
+    INFO: 'info',
+    WARNING: 'warning',
+    ERROR: 'error',
+    FATAL: 'fatal'
+};
 
-import { logger } from '../utils/logger.js'
+export const MODO_EJECUCION = 'development'
+//export const MODO_EJECUCION = 'production'
 
-
-//console.log('cargando config')
-
-//export const MODO_EJECUCION = 'online'
-export const MODO_EJECUCION = 'offline'
-
+export const MONGODB_CNX_STR = 'mongodb://localhost/productos'
 export const PORT = 8080
-
-
-
-export const loggerLevel = {
-    CONSOLE: MODO_EJECUCION === 'offline' ? 'error': 'http',
-    FILE: MODO_EJECUCION === 'offline' ? 'http' : 'error'
-}
-//export const NODE_ENV  = process.env.NODE_ENV || 'development'
-
-//logger.info('configuración cargada')

@@ -1,0 +1,14 @@
+{"level":"info","message":"trabajando con persistencia local"}
+{"level":"info","message":"[GET] /loggerTest"}
+{"level":"info","message":"Trabajando con persistencia local"}
+{"level":"info","message":"[GET] /loggerTest"}
+{"level":"debug","message":"Este es un mensaje de debug"}
+{"level":"http","message":"Este es un mensaje de HTTP"}
+{"level":"info","message":"Este es un mensaje de info"}
+{"level":"error","message":"Este es un mensaje de error"}
+{"level":"info","message":"Trabajando con persistencia local"}
+{"level":"info","message":"[GET] /loggerTest"}
+{"level":"debug","message":"Este es un mensaje de debug"}
+{"level":"http","message":"Este es un mensaje de HTTP"}
+{"level":"info","message":"Este es un mensaje de info"}
+{"level":"error","message":"Este es un mensaje de error"}
